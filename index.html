@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/c0876a3e9b.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="conatiner">
+        <nav>
+            <!-- <img src="images/namelogo1.jpg" class="logo"> -->
+            <h1 style="color:crimson; size: 26px;">Shatakshi Shukla</h1>
+
+        
+            <ul id="sidemenu">
+               <li><a href="#header">Home</a></li>
+               <li><a href="#about">About</a></li>
+               <li><a href="#services">Services</a></li>
+               <li><a href="#portfolio">Project</a></li>
+               <li><a href="#contact">Contact/Resume</a></li>
+               <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="leftsection">
+          Hi,<br>My name is <span class="purple">Shatakshi Shukla</h1></span> 
+            <div>
+              and I am a passionate <br>
+             <!-- <div>Full-Stack Developer </div>--> 
+               <span id="element"></span>
+            </div>
+            <a href="https://www.linkedin.com/in/shatakshi-shukla-370a22240//"> <button class="btn">LinkedIn</button></a>
+            <a href="https://github.com/Shatakshi-Shukla31"> <button class="btn">GitHUb</button></a>
+         </div>
+    </div>
+</div>
+<div id="about">
+    <div class="conatiner">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/s3.png">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-tittle">About Me</h1>
+                <p>"I am a passionate software developer currently pursuing my Final year of B.Tech at Pranveer Singh Institute of Technology. I completed my Intermediate education atSHRI Ram Public School and my High School education at U P Kirana Seva Samiti Balika Vidyalaya. I am proficient in c++,Python MySQL, and web designing tools. I love problem-solving and writing code, and I am eagerly looking forward to amazing opportunities where I can continue to learn and grow even more."</p>
+                <div class="containers">
+                    <p><strong>Profile:</strong> Fresher</p>
+                    <p><strong>Domain:</strong>Computer Science Data Science (CSDS)</p>
+                    <p><strong>Education:</strong> Bachelor of Technology</p>
+                    <p><strong>Languages:</strong> English, Hindi</p>
+                    <p><strong>Tools/Database:</strong> MySQL,Git/GitHub</p>
+                    <p><strong>Other Skills:</strong> Data Struture,C++,C,PythonHTML,CSS,JavaScript,Object Oriented Programing ,DBMS,Operating system</p>
+                    <div class="interests">
+                        <p><strong>Interests:</strong></p>
+                        <ul>
+                            <li>Problem Solving</li>
+                            <li>Music</li>
+                            <li>Adventures place</li>
+                            <li>Cooking</li>
+                            <!-- <li>Writing</li> -->
+                        </ul>
+                    </div>
+                </div>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Coding Profile</p>
+                    <p class="tab-links"onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Data Structure and Algorithm in C++</span> <br><div class="skill-bar">
+                            <div class="skill-level" style="width: 100%;"></div>
+                        </div></li>
+                        <li><span>C++</span> <br><div class="skill-bar">
+                            <div class="skill-level" style="width: 100%;"></div>
+                        </div></li>
+                        <li><span>HTML/CSS/JavaScript</span> <br><div class="skill-bar">
+                            <div class="skill-level" style="width: 100%;"></div>
+                        </div></li>
+                        <li><span>MySQL</span> <br><div class="skill-bar">
+                            <div class="skill-level" style="width: 100%;"></div>
+                        </div></li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <div class="profile-container">
+                        <div class="profile-item">
+                          <img src="images/LeetCode_Sharing.png" alt="LeetCode">
+                          <div class="profile-info">
+                            <a href="https://leetcode.com/u/Shatakshishukl/"><h3>LeetCode <i class="fa-solid fa-up-right-from-square"></i></h3></a>                            
+                            <p>Username: Shatakshishukl</p>
+                            <p>Solved Problems: 450+</p>
+                          </div>
+                        </div>
+                        <div class="profile-item">
+                          <img src="images/codechef.png" alt="CodeChef">
+                          <div class="profile-info">
+                            <a href="#"><h3>CodeChef <i class="fa-solid fa-up-right-from-square"></i></h3></a>
+                            <p>Username: Shatakshishukl</p>
+                            <p>Solved Problems: 200+</p>
+                          </div>
+                        </div>
+                        <div class="profile-item">
+                          <img src="images/CN-DP.jpg" alt="CodingNinjas">
+                          <div class="profile-info">
+                            <a href="#"><h3>Coding Ninjas<i class="fa-solid fa-up-right-from-square"></i></h3></a>
+                            <p>Username: Shatakshishukl</p>
+                            <p>Solved Problems: 100+</p>
+                          </div>
+                        </div>
+                      </div>
+                       
+                </div>
+                <div class="tab-contents" id="education">
+                     <ul>
+                        <li>
+                            <div class="education-item">
+                                <h3>B-Tech (CS-DS)
+                                <p>Pranveer Singh Institute of Technology (PSIT) Kanpur</p>
+                                <p>Year: 2021 - 2025</p>
+                            </div>
+                    </li>
+                        <li>
+                            <div class="education-item">
+                                <h3>Intermediate (PCM)</h3>
+                                <p>SHRI Ram Public School Kanpur</p>
+                                <p>Year:2020</p>
+                            </div>
+                        </li>
+                        <div class="education-item">
+                            <h3>High School</h3>
+                            <p>U P Kirana Seva Samiti Balika Vidyalaya Kanpur</p>
+                            <p>Year:2018</p>
+                        </div>
+                        <li>
+
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- --------------------------------Services---------------- -->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-tittle">My Services</h1>
+        <div class="services-list">
+            <div >
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Design</h2>
+                <p>Incorporating web design across multiple projects, including project management tools, quiz generators, portfolios, and various other bespoke solutions, we ensure each creation is not just functional, but an immersive experience. With a keen eye for detail and a commitment to innovation, we transform concepts into digital realities that resonate with users and elevate brands. Explore our diverse portfolio to witness the breadth and depth of our web design expertise.</p>
+                <a href="https://github.com/Shatakshi-Shukla31/Flower-Shopping-Website">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-java"></i>
+                <h2>Front-End Development</h2>
+                <p>
+                    Utilizing Java, we are developing two projects: a Quiz Application and a Bank Management System. These projects will leverage JDBC connectivity, the AWT framework, Java Spring, and MySQL. With a robust foundation in Java technologies, we aim to deliver efficient, secure, and user-friendly solutions for both educational and financial<br>The Bank Management System project is primarily developed through group collaboration</p>
+
+                <a href="https://github.com/Shatakshi-Shukla31/Flower-Shopping-Website">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-terminal"></i>
+                <h2>Internship and Achievemement</h2>
+                <p>I completed a virtual Web Development internship within a one-month duration at OASIS INFOBYT. During this internship, I focused solely on mastering front-end technologies such as HTML, CSS, and JavaScript.<br>I have solved over 450 questions on LeetCode, achieving a rating of 1400+ and maintaining an active streak of 100+ days</p>
+                <a href="https://leetcode.com/u/Shatakshishukl//">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ----------------------------------Project--------------------------->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-tittle">Project</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/contact-img.svg">
+                <div class="layer">
+                    <h3>Flower-Shopping-Website</h3>
+                    <p>"This project management tool, built using HTML, CSS, and JavaScript, allows users to organize tasks, add new plants, and mark tasks as completed, providing a user-friendly interface for efficient project."</p>
+                    <a href="https://github.com/Shatakshi-Shukla31/Flower-Shopping-Website"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/p2.png">
+                <div class="layer">
+                    <h3>Bank Management System</h3>
+                    <p>The Bank Management System is a Java-based application designed to streamline banking operations and enhance customer service. It provides a comprehensive platform for managing various banking activities, including account management, transactions, customer information, and employee management. And This project to create to the group </p>
+                    <a href="https://github.com/Shatakshi-Shukla31/Flower-Shopping-Website"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/Screenshot 2024-09-29 194451.png">
+                <div class="layer">
+                    <h3>Quiz App</h3>
+                    <p>Implemented a user-friendly interface for displaying questions and options.
+                        Designed a question class to encapsulate each question's details, including the question text, options, and correct answer.
+                        Implemented functionality to add new questions to the quiz dynamically.
+                        Incorporated error handling to ensure smooth user interaction and prevent crashes.</p>
+                    <a href="https://github.com/Shatakshi-Shukla31/QuizApp"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+</div>
+
+<!-- -----------------------------Contact--------------------------------- -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-tittle">Contact Me</h1>
+                <p><i class="fa-solid fa-envelope"></i>shatakshishukla120@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>+91 89601 79838</p>
+                <div class="socail-icons">
+                    <a href="https://www.linkedin.com/in/shatakshi-shukla-370a22240//"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/Shatakshi-Shukla31"><i class="fa-brands fa-github"></i>></a>
+                    <!-- <a href="https://www.hackerrank.com/profile/adarsh1293"><i class="fa-brands fa-hackerrank"></i></a> -->
+                    <a href="https://leetcode.com/u/Shatakshishukl/"><i class="cib-leetcode"></i></a>
+                </div>
+                <a href="images/Shatkshiresume.pdf" download class="btn btn2">Download Resume</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2"> Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="copyright">
+        <p>Copyright © Shatakshi Shukla Made with<i class="fa-solid fa-heart"></i> by Easy Tutorials </p>
+    </div>
+</div>
+
+<script>
+      var tablinks=document.getElementsByClassName("tab-links");
+      var tabcontents=document.getElementsByClassName("tab-contents");
+      function opentab(tabname){
+        for(tablink of tablinks)
+        {
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents)
+        {
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+      }
+</script>
+
+<script>
+    var sidemenu=document.getElementById("sidemenu");
+    function openmenu()
+    {
+        sidemenu.style.right="0";
+    }
+
+    function closemenu()
+    {
+        sidemenu.style.right="-200px";
+    }
+
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbw7pXbI20vD_QdxNP86HzmGOeVdC_gpa7xtgf6_wQiovYruJ6426eh639BLfQfO8MN1/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg=document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML="Message sent successfully"
+            setTimeout(function()
+            {
+                msg.innerHTML=""},5000)
+                form.reset()
+            })
+
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+<script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+  <script>
+    var typed = new Typed('#element', {
+      strings: ['Web Developer','Java Development','Software Engineer'],
+    typeSpeed: 50,
+    });
+  </script>
+</body>
+</html>
